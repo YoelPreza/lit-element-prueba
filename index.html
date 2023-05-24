@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;my-element> Demo</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="./components/my-element.js"></script>
+    <script type="module" src="./components/my-element2.js"></script>
+    <script type="module" src="./components/my-navbar.js"></script>
+    <script type="module" src="./components/my-login.js"></script>
+
+    <style>
+      p {
+        border: solid 1px blue;
+        padding: 8px;
+      
+      }
+    </style>
+  </head>
+  <body display="flex">
+
+    <my-navbar  img='{"src":"https://lit.dev/images/logo-whitebg-padded-1600x800.png", "href":"https://lit.dev/docs/v1/","alt":"logo lit"}'titulo="Aprendiendo Lit"></my-navbar> 
+
+    <my-element2 prop1="Hello" age=5 prop3=true prop4='["Soy","un","array"]' prop5='{"edad": 5, "ciudad": "CDMX"}'></my-element2>
+
+    
+    
+  </body>
+</html>
